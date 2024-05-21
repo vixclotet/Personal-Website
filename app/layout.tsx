@@ -6,19 +6,19 @@ import { Analytics } from "./components/analytics";
 
 export const metadata: Metadata = {
   title: {
-    default: "chronark.com",
-    template: "%s | chronark.com",
+    default: "Vix Clotet",
+    template: "%s | Vix Clotet",
   },
-  description: "Co-founder of unkey.dev and founder of planetfall.io",
+  description: "Tech Entrepreneur",
   openGraph: {
-    title: "chronark.com",
+    title: "Vix Clotet",
     description:
-      "Co-founder of unkey.dev and founder of planetfall.io",
+      "Victoria Clotet's Personal Website",
     url: "https://chronark.com",
-    siteName: "chronark.com",
+    siteName: "Vix Clotet",
     images: [
       {
-        url: "https://chronark.com/og.png",
+        url: "https://chronark.com/og.png", //change the main picture here
         width: 1920,
         height: 1080,
       },
@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     },
   },
   twitter: {
-    title: "Chronark",
+    title: "Vix Clotet",
     card: "summary_large_image",
   },
   icons: {
-    shortcut: "/favicon.png",
+    shortcut: "/favicon.png", //change the favicon
   },
 };
 const inter = Inter({

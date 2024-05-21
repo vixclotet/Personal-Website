@@ -3,7 +3,7 @@ import React from "react";
 import Particles from "./components/particles";
 
 const navigation = [
-  { name: "Contact", href: "/contact" },
+  { name: "Feel Free to Contact Me", href: "/contact" },
 ];
 
 export default function Home() {

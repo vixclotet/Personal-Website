@@ -1,6 +1,8 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import { Linkedin } from "lucide-react";
+
 
 // Navigation Links
 const navigation = [
@@ -53,6 +55,17 @@ export default function Home() {
         <div className="flex flex-col items-center">
           <img src="SFPic.jpg" alt="SF Pic" className="w-60 h-80 border-4 border-neutral-700" />
           <h3 className="font-mono">I loooove SF 🌉</h3>
+        </div>
+      </div>
+
+      {/* LinkedIn Button and Link */}
+      <div className="my-16 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-4">
+        <div className="inline-block bg-white rounded-full px-6 py-3 shadow-lg">
+          <h2 className="text-3xl text-neutral-900 font-mono font-bold hover:text-zinc-500">
+            <a href="https://www.linkedin.com/in/victoria-clotet/" className="flex items-center justify-center">
+              My LinkedIn <span className="ml-2"><Linkedin /></span>
+            </a>
+          </h2>
         </div>
       </div>
 

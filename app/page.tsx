@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
 import { Linkedin } from "lucide-react";
+import { Analytics } from "@vercel/analytics/react"
 
 
 // Navigation Links

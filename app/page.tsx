@@ -108,7 +108,7 @@ export default function Home() {
       <div className="my-16 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-4">
         <div className="inline-block bg-white rounded-full px-6 py-3 shadow-lg">
           <h2 className="text-3xl text-neutral-900 font-mono font-bold hover:text-zinc-500">
-            <a href="https://x.com/vixclotet">Check my tweets!!</a>
+            <a href="https://x.com/vixclotet">Check Out my tweets!!</a>
           </h2>
         </div>
       </div>

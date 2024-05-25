@@ -67,7 +67,7 @@ export default function Home() {
           I have a strong interest on the intersection between AI, Fintech, Content Creation, and SaaS business models. <span className="font-bold">If you are interested and/or passionate about one of these areas, do not be scared to reach out to me!</span>
         </h3>
         <div className="flex flex-col items-center">
-          <img src="travelMap.png" alt="SF Pic" className="w-120 h-80 border-4 border-neutral-700" />
+          <img src="travelMap.png" alt="Travel Map" className="w-120 h-80 border-4 border-neutral-700" />
           <h3 className="font-mono"></h3>
         </div>
       </div>
@@ -123,6 +123,11 @@ export default function Home() {
           </div>
         </div>
       </div>
+
+      {/* Footer */}
+      <footer className="mt-16 mb-4 text-center">
+        <p className="text-neutral-700 font-mono">© 2024 Victoria Clotet</p>
+      </footer>
     </div>
   );
 }

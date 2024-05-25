@@ -98,6 +98,9 @@ export default function Home() {
           <h3><a href="https://x.com/ThePixelFan">AI Pixel Artist Bot</a></h3>
         </div>
         <div className="text-lg text-neutral-900 hover:text-zinc-500 font-mono font-bold">
+          <h3><a href="https://www.nextstarbucksdrink.com/">Your Next Starbucks Drink</a></h3>
+        </div>
+        <div className="text-lg text-neutral-900 hover:text-zinc-500 font-mono font-bold">
           <h3><a href="https://github.com/vix4723">Go and Have Fun visiting my Github</a></h3>
         </div>
         <div className="text-lg text-neutral-900 hover:text-zinc-500 font-mono font-bold">

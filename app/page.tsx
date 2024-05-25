@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react"
 // Navigation Links
 const navigation = [
   { name: "Contact Me", href: "/contact" },
-  { name: "Photography", href: "/photos" },
+  { name: "Photos", href: "/photos" },
 ];
 
 // Actual Website Starts

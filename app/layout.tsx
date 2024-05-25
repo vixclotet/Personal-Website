@@ -14,11 +14,11 @@ export const metadata: Metadata = {
     title: "Vix Clotet",
     description:
       "Victoria Clotet's Personal Website",
-    url: "https://chronark.com",
+    url: "https://vixclotet.com",
     siteName: "Vix Clotet",
     images: [
       {
-        url: "https://chronark.com/og.png", //change the main picture here
+        url: "https://vixclotet.com/og.jpg",
         width: 1920,
         height: 1080,
       },

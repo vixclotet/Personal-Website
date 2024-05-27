@@ -3,6 +3,7 @@ import { Github, InstagramIcon, Mail, Twitter, TwitterIcon, X } from "lucide-rea
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
+import { Analytics } from "@vercel/analytics/react"
 
 const socials = [
 	{

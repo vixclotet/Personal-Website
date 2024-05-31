@@ -16,20 +16,20 @@ const navigation = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-tl from-cyan-200 to-cyan-100">
-      <nav className="my-16 animate-fade-in max-w-4xl mx-auto w-full px-4">
-        <ul className="flex items-center justify-center gap-4">
+      <nav className="my-8 animate-fade-in max-w-4xl mx-auto w-full px-4">
+        <ul className="flex flex-col md:flex-row items-center justify-center gap-4">
           {navigation.map((item, index) => (
-            <li key={index}>
+            <li key={index} className="w-full md:w-auto text-center">
               <Link
                 href={item.href}
-                className="text-xl duration-500 text-neutral-700 hover:text-zinc-300 font-mono flex flex-col items-center"
+                className="block py-2 px-4 text-xl duration-500 text-neutral-700 hover:text-zinc-300 font-mono"
               >
                 {item.name}
               </Link>
             </li>
           ))}
-          <li>
-            <img src="favicon.png" alt="Center icon" className="w-24 h-24 mx-16" />
+          <li className="w-full md:w-auto text-center">
+            <img src="favicon.png" alt="Center icon" className="w-16 h-16 mx-auto md:mx-16" />
           </li>
         </ul>
       </nav>
@@ -122,6 +122,7 @@ export default function Home() {
         <p className="text-neutral-700 font-mono">© 2024 Victoria Clotet. Made with Love 🩵 and Starbucks Coffee</p>
         <img src="starbucks.png" alt="Center icon" className="w-6 h-6" />
       </footer>
+
     </div>
   );
 }

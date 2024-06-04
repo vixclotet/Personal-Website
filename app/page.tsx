@@ -15,7 +15,7 @@ const navigation = [
 // Actual Website Starts
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-tl from-cyan-200 to-cyan-100">
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-r from-cyan-100 via-cyan-200 to-cyan-100">
       <nav className="my-8 animate-fade-in max-w-4xl mx-auto w-full px-4">
         <ul className="flex flex-col md:flex-row items-center justify-center gap-4">
           {navigation.map((item, index) => (

@@ -16,29 +16,31 @@ const navigation = [
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-r from-cyan-100 via-cyan-200 to-cyan-100">
-      <nav className="my-8 animate-fade-in max-w-4xl mx-auto w-full px-4">
-        <ul className="flex flex-col md:flex-row items-center justify-center gap-4">
-          {navigation.map((item, index) => (
-            <li key={index} className="w-full md:w-auto text-center">
-              <Link
-                href={item.href}
-                className="block py-2 px-4 text-xl duration-500 text-neutral-700 hover:text-zinc-300 font-mono"
-              >
-                {item.name}
-              </Link>
-            </li>
-          ))}
-          <li className="w-full md:w-auto text-center">
+      <nav className="fixed top-0 left-0 w-full z-50">
+        <div className="max-w-4xl mx-auto w-full px-4 py-2 flex items-center justify-between backdrop-blur-sm bg-white/30 rounded-full">
+          <ul className="flex items-center gap-4">
+            {navigation.map((item, index) => (
+              <li key={index} className="w-full md:w-auto text-center">
+                <Link
+                  href={item.href}
+                  className="block py-2 px-4 text-xl duration-500 text-neutral-700 hover:text-zinc-300 font-mono"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <div className="w-full md:w-auto text-center">
             <img src="favicon.png" alt="Center icon" className="w-16 h-16 mx-auto md:mx-16" />
-          </li>
-        </ul>
+          </div>
+        </div>
       </nav>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-sky-900 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
+      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-sky-900 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text mt-24">
         Victoria Clotet
       </h1>
 

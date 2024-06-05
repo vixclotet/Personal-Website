@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
 import { Linkedin } from "lucide-react";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 
 // Navigation Links
 const navigation = [
@@ -15,7 +15,7 @@ const navigation = [
 // Actual Website Starts
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-r from-cyan-100 via-cyan-200 to-cyan-100">
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-r from-cyan-100 via-cyan-200 to-cyan-100 touch-auto">
       <nav className="fixed top-0 left-0 w-full z-50">
         <div className="max-w-4xl mx-auto w-full px-4 py-2 flex items-center justify-between backdrop-blur-sm bg-white/30 rounded-full">
           <ul className="flex items-center gap-4">
@@ -36,10 +36,7 @@ export default function Home() {
         </div>
       </nav>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <Particles
-        className="absolute inset-0 -z-10 animate-fade-in"
-        quantity={100}
-      />
+      <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
       <h1 className="z-10 text-4xl text-transparent duration-1000 bg-sky-900 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text mt-24">
         Victoria Clotet
       </h1>
@@ -77,9 +74,6 @@ export default function Home() {
               I have a strong interest on the intersection between AI, Fintech, Content Creation, and SaaS business models. <span className="font-bold">If you are interested and/or passionate about one of these areas, do not be scared to reach out to me!</span>
             </h3>
           </div>
-          {/* <div className="md:w-1/2 md:pl-4">
-            <img src="travelMap.png" alt="Travel Map" className="w-130 h-100 border-4 border-neutral-700" />
-          </div> */}
         </div>
       </div>
 
@@ -124,7 +118,6 @@ export default function Home() {
         <p className="text-neutral-700 font-mono">© 2024 Victoria Clotet. Made with Love 🩵 and Starbucks Coffee</p>
         <img src="starbucks.png" alt="Center icon" className="w-6 h-6" />
       </footer>
-
     </div>
   );
 }

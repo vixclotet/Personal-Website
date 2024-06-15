@@ -37,68 +37,93 @@ export default function Home() {
       </nav>
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-sky-900 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text mt-24">
+      <h1 className="z-10 text-4xl text-transparent font-display duration-1000 bg-blue-600 cursor-default text-edge-outline animate-title sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text mt-24">
         Victoria Clotet
       </h1>
 
       {/* Basic Introduction Section */}
       <div className="hidden w-screen space-y-6 h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
-      <div className="my-8 grid grid-cols-1 md:grid-cols-5 gap-4 animate-fade-in max-w-4xl w-full mx-auto px-4">
-        <div className="md:col-span-3 flex justify-center">
-          <div className="text-center w-full space-y-4">
-            <h2 className="text-xl text-neutral-900 font-mono">
-              Hi! I'm a 22 year old tech entrepreneur who loves to learn about emerging technologies and build cool things with smart and ambitious people. Right now, I am currently building a marketing SaaS solution for Entrepreneurs 🛠️. I like to explore new cities 🌇 and I have an obsession with Bubble Tea 🧋
-            </h2>
-            <h2 className="text-xl text-neutral-900 font-mono">
-              Right now, I am currently building a marketing SaaS solution for Entrepreneurs 🛠️. I like to explore new cities 🌇 and I have an obsession with Bubble Tea 🧋
-            </h2>
+      <div className="my-8 flex justify-center animate-fade-in max-w-4xl w-full mx-auto px-4">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
+          <div className="md:col-span-3 flex justify-center">
+            <div className="text-left w-full space-y-4 max-w-3xl">
+              <h2 className="text-xl text-neutral-900 font-mono">
+                Hi! I'm a 22 year old tech entrepreneur who loves to learn about emerging technologies and build cool things with smart and ambitious people.
+              </h2>
+              <h3 className="text-xl text-neutral-900 font-mono">
+                📍 Currently: in Panama City, Panama 🍹, send me an email at <a href="mailto:vixbusinesstech@gmail.com" className="text-xl text-blue-600 font-mono">vixbusinesstech@gmail.com</a> or a DM on Twitter/X at <a href="https://x.com/vixclotet" className="text-xl text-blue-600 font-mono">@vixclotet</a>
+              </h3>
+              <h2 className="text-2xl text-neutral-900 font-extrabold font-mono">
+                Right now, I'm...
+              </h2>
+              <ul className="list-disc list-inside text-xl text-neutral-900 font-mono ml-5">
+                <li>currently building a a search engine for the first time 🛠️.</li>
+                <li>exploring new cities 🌇.</li>
+                <li>organizing an entrepreneurship event with the IEEE Panama Section and IEEE Entrepreneurship organizations</li>
+              </ul>
+            </div>
           </div>
-        </div>
-
-        <div className="md:col-span-2 flex flex-col items-center">
-          <img src="SFPic.jpg" alt="SF Pic" className="w-60 h-80 border-4 border-neutral-700" />
-          <h3 className="font-mono">I loooove SF 🌉</h3>
+          <div className="md:col-span-2 flex flex-col items-center">
+            <img src="SFPic.jpg" alt="SF Pic" className="w-60 h-80 border-4 border-neutral-700" />
+            <h3 className="font-mono">I loooove SF 🌉</h3>
+          </div>
         </div>
       </div>
 
+
       {/* Background Section */}
       <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
-        <h2 className="text-3xl text-neutral-900 font-mono font-bold">
-          Background
+        <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
+          I am currently interested in...
+        </h2>
+        <div className="bg-blue-500 text-white p-4 rounded-lg">
+          <h3 className="text-lg text-white font-mono">
+            Consumer tech and Entertainment, FinTech, and SaaS tools for Marketers and Entrepreneurs.
+          </h3>
+        </div>
+        <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
+          More About Me
         </h2>
         <div className="flex flex-col md:flex-row items-center">
           <div className="text-center">
             <h3 className="text-lg text-neutral-900 font-mono">
-              I'm a recent UVA graduate who double majored in Computer Science and Commerce. I like to build cool things for people and work with other ambitious developers and engineers.
-              I like to travel around the EU, USA, and LATAM and learn about the different technologies that lead in each continent. One of my hobbies is photography. I like to take pictures of all of the places I travel to.
-              I have a strong interest on the intersection between AI, Fintech, Content Creation, and SaaS business models. <span className="font-bold">If you are interested and/or passionate about one of these areas, do not be scared to reach out to me!</span>
+              I'm a recent UVA graduate who double majored in Computer Science and Commerce.
+              I like to travel around the EU, USA, and LATAM and learn about the different technologies that lead in each continent.
             </h3>
           </div>
         </div>
       </div>
 
-      {/* Technical Contributions/Projects and Featured Articles Section */}
-      <div className="my-16 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-4 flex flex-col md:flex-row">
-        <div className="md:w-1/2 md:pr-2 space-y-4">
-          <h2 className="text-3xl text-neutral-900 font-mono font-bold underline">
-            Technical Projects
-          </h2>
+      {/* Technical Projects Section */}
+      <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
+        <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
+          Previously, I worked on these side projects 🛠️
+        </h2>
+        <div className="flex flex-wrap justify-center gap-4">
           {[
-            { name: "PosQuotes", href: "https://posquotes.com/" },
-            { name: "AI Pixel Artist Bot", href: "https://x.com/ThePixelFan" },
-            { name: "Your Next Starbucks Drink", href: "https://www.nextstarbucksdrink.com/" },
-            { name: "Go and Have Fun visiting my Github", href: "https://github.com/vix4723" },
-            { name: "More Coming Soon...", href: "#" },
+            { name: "PosQuotes ❝❞", href: "https://posquotes.com/" },
+            { name: "AI Pixel Artist Bot 🎨", href: "https://x.com/ThePixelFan" },
+            { name: "Your Next Starbucks Drink ☕", href: "https://www.nextstarbucksdrink.com/" },
           ].map((project, index) => (
-            <div key={index} className="text-xl text-neutral-900 hover:text-zinc-500 font-mono font-bold">
-              <h3><a href={project.href}>{project.name}</a></h3>
+            <div
+              key={index}
+              className="text-xl text-neutral-900 font-mono font-bold transform bg-sky-100 transition-transform hover:translate-y-1 hover:shadow-lg p-4 border border-gray-200 rounded-lg w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+            >
+              <h3>
+                <a href={project.href}>{project.name}</a>
+              </h3>
             </div>
           ))}
         </div>
-        <div className="md:w-1/2 md:pl-2 space-y-4">
-          <h2 className="text-3xl text-neutral-900 font-mono font-bold underline">
-            Featured Articles
-          </h2>
+      </div>
+
+
+      {/* Featured Articles Section */}
+      <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
+        <h2 className="text-3xl text-neutral-900 font-mono font-bold">
+          I've been featured on these articles 📰
+        </h2>
+        <div className="flex flex-wrap justify-center gap-4">
           {[
             { name: "Grace Hopper Conference 2023 Small Story", href: "https://www.linkedin.com/posts/yueyao1008_ghc-ugcPost-7114372736348553216-86e6?utm_source=share&utm_medium=member_desktop" },
             { name: "2022-2023 UVA CS Department End of Year Awards", href: "https://engineering.virginia.edu/department/computer-science/blogs/cs-department-end-year-award-recipients-2022-2023" },
@@ -106,12 +131,87 @@ export default function Home() {
             { name: "2021-2022 UVA CS Department End of Year Awards", href: "https://engineering.virginia.edu/department/computer-science/blogs/2021-2022-cs-department-end-year-awards" },
             { name: "HooHacks Hackathon 2023", href: "https://www.cavalierdaily.com/article/2023/03/back-on-grounds-hoohacks-2023-is-not-just-a-hackathon" },
           ].map((article, index) => (
-            <div key={index} className="text-xl text-neutral-900 hover:text-zinc-500 font-mono font-bold">
-              <h3><a href={article.href}>{article.name}</a></h3>
+            <div
+              key={index}
+              className="text-xl text-neutral-900 font-mono bg-sky-100 font-bold transform transition-transform hover:translate-y-1 hover:shadow-lg p-4 border border-gray-200 rounded-lg w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+            >
+              <h3>
+                <a href={article.href}>{article.name}</a>
+              </h3>
             </div>
           ))}
         </div>
       </div>
+
+
+      {/* Community & People */}
+      <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
+        <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
+          Community & People 🌍
+        </h2>
+        <div className="bg-blue-500 text-white p-4 rounded-lg">
+          <h3 className="text-lg text-white font-mono italic">
+            "Community is a place where connections happen, and value is created" - Unknown
+          </h3>
+        </div>
+        <div className="flex flex-col font-mono md:flex-row items-center">
+          <div className="text-center w-full">
+            <h3 className="text-xl text-neutral-900 font-mono font-bold">
+              Communities that I've been part of
+            </h3>
+            <div className="flex flex-wrap justify-center gap-4 mt-4">
+              <div className="bg-gray-100 text-xl p-4 rounded-xl flex-1 min-w-[200px] max-w-[300px]">
+                IEEE Panama Section & IEEE Entrepreneurship
+              </div>
+              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+                buildspace
+              </div>
+              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+                UVA Women in Computer Science
+              </div>
+              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+                UVA Association of Computing Machinery
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Hobbies Section */}
+      <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
+        <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
+          My Hobbies 🏃‍♀️
+        </h2>
+        <div className="flex flex-col font-mono md:flex-row items-center">
+          <div className="text-center w-full">
+            <h3 className="text-xl text-neutral-900 font-mono font-bold">
+              This is what I do in my free time
+            </h3>
+            <div className="flex flex-wrap justify-center gap-4 mt-4">
+              <div className="bg-gray-100 text-xl p-4 rounded-xl flex-1 min-w-[200px] max-w-[300px]">
+                Hike 🏔️
+              </div>
+              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+                Indoor Cycling 🚴
+              </div>
+              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+                Photography 📸
+                <a href="https://www.vixclotet.com/photos" className="text-xl text-blue-600 font-mono">check my photos!</a>
+              </div>
+              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+                Travel ✈️
+              </div>
+              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+                Explore Bubble Tea Shops🧋
+              </div>
+              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+                Explore New Restaurants and Eat Brunch 🥯
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       {/* Footer */}
       <footer className="mt-16 mb-4 text-center flex items-center justify-center space-x-2">

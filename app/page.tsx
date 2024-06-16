@@ -1,5 +1,7 @@
+"use client";
+
 import Link from "next/link";
-import React from "react";
+import React, { useEffect } from "react";
 import Particles from "./components/particles";
 import { Linkedin } from "lucide-react";
 import { Analytics } from "@vercel/analytics/react";
@@ -10,12 +12,13 @@ const navigation = [
   { name: "Photos", href: "/photos" },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/victoria-clotet/" },
   { name: "X/Twitter", href: "https://x.com/vixclotet" },
+  { name: "Buy Me A Coffee ☕", href: "https://buymeacoffee.com/vixclotet", isSpecial: true },
 ];
 
-// Actual Website Starts
 export default function Home() {
+
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-r from-cyan-100 via-cyan-200 to-cyan-100 touch-auto">
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-r from-cyan-100 via-cyan-200 to-cyan-100 touch-auto bg-fixed">
       <nav className="fixed top-0 left-0 w-full z-50">
         <div className="max-w-4xl mx-auto w-full px-4 py-2 flex items-center justify-between backdrop-blur-sm bg-white/30 rounded-full">
           <ul className="flex items-center gap-4">
@@ -23,7 +26,7 @@ export default function Home() {
               <li key={index} className="w-full md:w-auto text-center">
                 <Link
                   href={item.href}
-                  className="block py-2 px-4 text-xl duration-500 text-neutral-700 hover:text-zinc-300 font-mono"
+                  className={`block py-2 px-4 text-xl duration-500 text-neutral-700 hover:text-zinc-300 font-mono ${item.isSpecial ? 'bg-cyan-200 text-black rounded-full' : ''}`}
                 >
                   {item.name}
                 </Link>
@@ -41,7 +44,6 @@ export default function Home() {
         Victoria Clotet
       </h1>
 
-      {/* Basic Introduction Section */}
       <div className="hidden w-screen space-y-6 h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <div className="my-8 flex justify-center animate-fade-in max-w-4xl w-full mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-4 w-full">
@@ -70,8 +72,6 @@ export default function Home() {
         </div>
       </div>
 
-
-      {/* Background Section */}
       <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
         <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
           I am currently interested in...
@@ -94,7 +94,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Technical Projects Section */}
       <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
         <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
           Previously, I worked on these side projects 🛠️
@@ -117,8 +116,6 @@ export default function Home() {
         </div>
       </div>
 
-
-      {/* Featured Articles Section */}
       <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
         <h2 className="text-3xl text-neutral-900 font-mono font-bold">
           I've been featured on these articles 📰
@@ -143,8 +140,6 @@ export default function Home() {
         </div>
       </div>
 
-
-      {/* Community & People */}
       <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
         <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
           Community & People 🌍
@@ -177,7 +172,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Hobbies Section */}
       <div className="my-8 text-center animate-fade-in max-w-4xl mx-auto w-full px-4 space-y-6">
         <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
           My Hobbies 🏃‍♀️
@@ -212,8 +206,6 @@ export default function Home() {
         </div>
       </div>
 
-
-      {/* Footer */}
       <footer className="mt-16 mb-4 text-center flex items-center justify-center space-x-2">
         <p className="text-neutral-700 font-mono">© 2024 Victoria Clotet. Made with Love 🩵 and Starbucks Coffee</p>
         <img src="starbucks.png" alt="Center icon" className="w-6 h-6" />

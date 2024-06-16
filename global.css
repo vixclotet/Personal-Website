@@ -8,3 +8,12 @@
   }
 } 
 
+:root {
+  --gradient-opacity: 0.8;
+}
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, var(--gradient-opacity)),
+      rgba(255, 255, 255, 0));
+  transition: background 0.2s ease-in-out;
+}

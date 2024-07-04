@@ -59,7 +59,7 @@ export default function Home() {
                 Right now, I'm...
               </h2>
               <ul className="list-disc list-inside text-xl text-neutral-900 font-mono ml-5">
-                <li>currently building a a search engine for the first time 🛠️.</li>
+                <li>currently building <a href="https://www.silithius.com" className="text-xl text-blue-600 font-mono">Silithius</a> 🛠️.</li>
                 <li>exploring new cities 🌇.</li>
                 <li>organizing an entrepreneurship event with the IEEE Panama Section and IEEE Entrepreneurship organizations</li>
               </ul>
@@ -101,7 +101,6 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-4">
           {[
             { name: "PosQuotes ❝❞", href: "https://posquotes.com/" },
-            { name: "AI Pixel Artist Bot 🎨", href: "https://x.com/ThePixelFan" },
             { name: "Your Next Starbucks Drink ☕", href: "https://www.nextstarbucksdrink.com/" },
           ].map((project, index) => (
             <div

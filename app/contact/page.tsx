@@ -1,5 +1,5 @@
 "use client";
-import { Github, InstagramIcon, Mail, Twitter, TwitterIcon, X } from "lucide-react";
+import { BlocksIcon, Github, InstagramIcon, Mail, Twitter, TwitterIcon, X } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
@@ -35,6 +35,12 @@ const socials = [
 		href: "https://github.com/vix4723",
 		label: "Github",
 		handle: "@Vix4723",
+	},
+	{
+		icon: <BlocksIcon size={20} />,
+		href: "https://sage.buildspace.so/@victoria-RWOM02M",
+		label: "Sage/Buildspace",
+		handle: "Victoria Clotet",
 	},
 ];
 

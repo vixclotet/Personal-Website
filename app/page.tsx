@@ -61,7 +61,6 @@ export default function Home() {
               <ul className="list-disc list-inside text-xl text-neutral-900 font-mono ml-5">
                 <li>currently building <a href="https://www.silithius.com" className="text-xl text-blue-600 font-mono">Silithius</a> 🛠️.</li>
                 <li>exploring new cities 🌇.</li>
-                <li>organizing an entrepreneurship event with the IEEE Panama Section and IEEE Entrepreneurship organizations</li>
               </ul>
             </div>
           </div>

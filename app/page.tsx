@@ -59,8 +59,9 @@ export default function Home() {
                 Right now, I'm...
               </h2>
               <ul className="list-disc list-inside text-xl text-neutral-900 font-mono ml-5">
-                <li>currently building <a href="https://www.silithius.com" className="text-xl text-blue-600 font-mono">Silithius</a> 🛠️.</li>
-                <li>exploring new cities 🌇.</li>
+                <li>exploring new cities 🌇</li>
+                <li>building in tech 💻</li>
+                <li>networking 🤝</li>
               </ul>
             </div>
           </div>
@@ -99,6 +100,7 @@ export default function Home() {
         </h2>
         <div className="flex flex-wrap justify-center gap-4">
           {[
+            { name: "Silithius 🤠 (buildspace s5)", href: "https://www.silithius.com" },
             { name: "PosQuotes ❝❞", href: "https://posquotes.com/" },
             { name: "Your Next Starbucks Drink ☕", href: "https://www.nextstarbucksdrink.com/" },
           ].map((project, index) => (
@@ -157,7 +159,7 @@ export default function Home() {
                 IEEE Panama Section & IEEE Entrepreneurship
               </div>
               <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
-                buildspace
+                buildspace nights&weekends s5 💛
               </div>
               <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
                 UVA Women in Computer Science

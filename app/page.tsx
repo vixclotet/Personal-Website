@@ -53,7 +53,7 @@ export default function Home() {
                 Hi! I'm a 22 year old tech entrepreneur who loves to learn about emerging technologies and build cool things with smart and ambitious people.
               </h2>
               <h3 className="text-xl text-neutral-900 font-mono">
-                📍 Currently: in Panama City, Panama 🍹, send me an email at <a href="mailto:vixbusinesstech@gmail.com" className="text-xl text-blue-600 font-mono">vixbusinesstech@gmail.com</a> or a DM on Twitter/X at <a href="https://x.com/vixclotet" className="text-xl text-blue-600 font-mono">@vixclotet</a>
+                📍 Currently: in Madrid, Spain, send me an email at <a href="mailto:vixbusinesstech@gmail.com" className="text-xl text-blue-600 font-mono">vixbusinesstech@gmail.com</a> or a DM on Twitter/X at <a href="https://x.com/vixclotet" className="text-xl text-blue-600 font-mono">@vixclotet</a>
               </h3>
               <h2 className="text-2xl text-neutral-900 font-extrabold font-mono">
                 Right now, I'm...
@@ -78,7 +78,7 @@ export default function Home() {
         </h2>
         <div className="bg-blue-500 text-white p-4 rounded-lg">
           <h3 className="text-lg text-white font-mono">
-            Consumer tech and Entertainment, FinTech, and SaaS tools for Marketers and Entrepreneurs.
+            Consumer tech and Entertainment, FinTech, and SaaS tools and applications
           </h3>
         </div>
         <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">

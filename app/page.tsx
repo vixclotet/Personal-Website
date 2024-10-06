@@ -50,7 +50,7 @@ export default function Home() {
           <div className="md:col-span-3 flex justify-center">
             <div className="text-left w-full space-y-4 max-w-3xl">
               <h2 className="text-xl text-neutral-900 font-mono">
-                Hi! I'm a 22 year old tech entrepreneur who loves to learn about emerging technologies and build cool things with smart and ambitious people.
+                Hi! I'm a 23 year-old tech entrepreneur who loves to learn about emerging technologies and build cool things with smart and ambitious people.
               </h2>
               <h3 className="text-xl text-neutral-900 font-mono">
                 📍 Currently: in Madrid, Spain, send me an email at <a href="mailto:vixbusinesstech@gmail.com" className="text-xl text-blue-600 font-mono">vixbusinesstech@gmail.com</a> or a DM on Twitter/X at <a href="https://x.com/vixclotet" className="text-xl text-blue-600 font-mono">@vixclotet</a>
@@ -88,7 +88,7 @@ export default function Home() {
           <div className="text-center">
             <h3 className="text-lg text-neutral-900 font-mono">
               I'm a recent UVA graduate who double majored in Computer Science and Commerce.
-              I like to travel around the EU, USA, and LATAM and learn about the different technologies that lead in each continent.
+              I like to travel around the EU, USA, and LATAM and build innovative projects with emerging technologies.
             </h3>
           </div>
         </div>
@@ -102,7 +102,7 @@ export default function Home() {
           {[
             { name: "Silithius 🤠 (buildspace s5)", href: "https://www.silithius.com" },
             { name: "PosQuotes ❝❞", href: "https://posquotes.com/" },
-            { name: "Your Next Starbucks Drink ☕", href: "https://www.nextstarbucksdrink.com/" },
+            { name: "Your Next Starbucks Drink ☕", href: "https://www.youtube.com/watch?v=7VjA2pb-HgU" },
           ].map((project, index) => (
             <div
               key={index}
@@ -186,7 +186,7 @@ export default function Home() {
                 Hike 🏔️
               </div>
               <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
-                Indoor Cycling 🚴
+                Gym & Indoor Cycling 🚴
               </div>
               <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
                 Photography 📸

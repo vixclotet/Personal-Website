@@ -18,7 +18,7 @@ const navigation = [
 export default function Home() {
 
   return (
-    <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-r from-cyan-100 via-cyan-200 to-cyan-100 touch-auto bg-fixed">
+    <div className="flex flex-col items-center justify-center w-screen min-h-screen overflow-x-hidden overflow-y-auto bg-gradient-to-r from-pink-100 via-pink-200 to-pink-100 touch-auto bg-fixed">
       <nav className="fixed top-0 left-0 w-full z-50">
         <div className="max-w-4xl mx-auto w-full px-4 py-2 flex items-center justify-between backdrop-blur-sm bg-white/30 rounded-full">
           <ul className="flex items-center gap-4">
@@ -26,7 +26,7 @@ export default function Home() {
               <li key={index} className="w-full md:w-auto text-center">
                 <Link
                   href={item.href}
-                  className={`block py-2 px-4 text-xl duration-500 text-neutral-700 hover:text-zinc-300 font-mono ${item.isSpecial ? 'bg-cyan-200 text-black rounded-full' : ''}`}
+                  className={`block py-2 px-4 text-xl duration-500 text-neutral-700 hover:text-zinc-300 font-mono ${item.isSpecial ? 'bg-pink-200 text-black rounded-full' : ''}`}
                 >
                   {item.name}
                 </Link>
@@ -34,13 +34,13 @@ export default function Home() {
             ))}
           </ul>
           <div className="w-full md:w-auto text-center">
-            <img src="favicon.png" alt="Center icon" className="w-16 h-16 mx-auto md:mx-16" />
+            <img src="favicon.png" alt="Center icon" className="w-24 h-24 mx-auto md:mx-16" />
           </div>
         </div>
       </nav>
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+      <div className="hidden w-screen h-px animate-glow mt-14 md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles className="absolute inset-0 -z-10 animate-fade-in" quantity={100} />
-      <h1 className="z-10 text-4xl text-transparent font-display duration-1000 bg-blue-600 cursor-default text-edge-outline animate-title sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text mt-24">
+      <h1 className="z-10 text-4xl text-transparent font-display duration-1000 bg-fuchsia-600 cursor-default text-edge-outline animate-title sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text mt-24">
         Victoria Clotet
       </h1>
 
@@ -53,7 +53,7 @@ export default function Home() {
                 Hi! I'm a 23 year-old tech entrepreneur who loves to learn about emerging technologies and build cool things with smart and ambitious people.
               </h2>
               <h3 className="text-xl text-neutral-900 font-mono">
-                📍 Currently: in Madrid, Spain, send me an email at <a href="mailto:vixbusinesstech@gmail.com" className="text-xl text-blue-600 font-mono">vixbusinesstech@gmail.com</a> or a DM on Twitter/X at <a href="https://x.com/vixclotet" className="text-xl text-blue-600 font-mono">@vixclotet</a>
+                📍 Currently: in Madrid, Spain, send me an email at <a href="mailto:vixbusinesstech@gmail.com" className="text-xl text-fuchsia-600 font-mono">vixbusinesstech@gmail.com</a> or a DM on Twitter/X at <a href="https://x.com/vixclotet" className="text-xl text-fuchsia-600 font-mono">@vixclotet</a>
               </h3>
               <h2 className="text-2xl text-neutral-900 font-extrabold font-mono">
                 Right now, I'm...
@@ -76,7 +76,7 @@ export default function Home() {
         <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
           I am currently interested in...
         </h2>
-        <div className="bg-blue-500 text-white p-4 rounded-lg">
+        <div className="bg-fuchsia-500 text-white p-4 rounded-lg">
           <h3 className="text-lg text-white font-mono">
             Consumer tech and Entertainment, FinTech, and SaaS tools and applications
           </h3>
@@ -102,7 +102,6 @@ export default function Home() {
           {[
             { name: "Silithius 🤠 (buildspace s5)", href: "https://www.silithius.com" },
             { name: "PosQuotes ❝❞", href: "https://posquotes.com/" },
-            { name: "Your Next Starbucks Drink ☕", href: "https://www.youtube.com/watch?v=7VjA2pb-HgU" },
           ].map((project, index) => (
             <div
               key={index}
@@ -144,7 +143,7 @@ export default function Home() {
         <h2 className="text-3xl text-neutral-900 font-mono font-extrabold">
           Community & People 🌍
         </h2>
-        <div className="bg-blue-500 text-white p-4 rounded-lg">
+        <div className="bg-pink-500 text-white p-4 rounded-lg">
           <h3 className="text-lg text-white font-mono italic">
             "Community is a place where connections happen, and value is created" - Unknown
           </h3>
@@ -183,17 +182,17 @@ export default function Home() {
             </h3>
             <div className="flex flex-wrap justify-center gap-4 mt-4">
               <div className="bg-gray-100 text-xl p-4 rounded-xl flex-1 min-w-[200px] max-w-[300px]">
-                Hike 🏔️
+                Hiking 🏔️
               </div>
               <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
                 Gym & Indoor Cycling 🚴
               </div>
               <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
                 Photography 📸
-                <a href="https://www.vixclotet.com/photos" className="text-xl text-blue-600 font-mono">check my photos!</a>
+                <a href="https://www.vixclotet.com/photos" className="text-xl text-fuchsia-600 font-mono">check my photos!</a>
               </div>
               <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
-                Travel ✈️
+                Traveling ✈️
               </div>
               <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
                 Explore Bubble Tea Shops🧋

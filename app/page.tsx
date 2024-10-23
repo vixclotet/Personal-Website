@@ -129,7 +129,7 @@ export default function Home() {
           ].map((article, index) => (
             <div
               key={index}
-              className="text-xl text-neutral-900 font-mono bg-sky-100 font-bold transform transition-transform hover:translate-y-1 hover:shadow-lg p-4 border border-gray-200 rounded-lg w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
+              className="text-xl text-neutral-900 font-mono bg-pink-100 font-bold transform transition-transform hover:translate-y-1 hover:shadow-lg p-4 border border-pink-200 rounded-lg w-full sm:w-1/2 md:w-1/3 lg:w-1/4"
             >
               <h3>
                 <a href={article.href}>{article.name}</a>
@@ -154,16 +154,16 @@ export default function Home() {
               Communities that I've been part of
             </h3>
             <div className="flex flex-wrap justify-center gap-4 mt-4">
-              <div className="bg-gray-100 text-xl p-4 rounded-xl flex-1 min-w-[200px] max-w-[300px]">
+              <div className="bg-pink-100 text-xl p-4 rounded-xl flex-1 min-w-[200px] max-w-[300px]">
                 IEEE Panama Section & IEEE Entrepreneurship
               </div>
-              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+              <div className="bg-pink-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
                 buildspace nights&weekends s5 💛
               </div>
-              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+              <div className="bg-pink-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
                 UVA Women in Computer Science
               </div>
-              <div className="bg-gray-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
+              <div className="bg-pink-100 text-xl p-4 rounded-lg flex-1 min-w-[200px] max-w-[300px]">
                 UVA Association of Computing Machinery
               </div>
             </div>
